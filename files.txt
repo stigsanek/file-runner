@@ -1,0 +1,10 @@
+image1.jpeg
+image2.jpeg
+image2.jpeg
+doc.pdf
+doc.pdf
+doc.pdf
+text.txt
+notfile.doc
+notfile.doc
+notfile.doc
