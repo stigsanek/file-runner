@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 .vscode/
+error.txt
+input/
+output/
