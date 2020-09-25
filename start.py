@@ -11,9 +11,10 @@ def define_path():
         path_dir['output'] = configs[1].strip()
 
 def logs_error():
-    with open('error.txt', 'w') as error_file:
-        for item in errors:
-            error_file.write(item + '\n')
+    if len(errors) > 0:
+        with open('error.txt', 'w') as error_file:
+            for item in errors:
+                error_file.write(item + '\n')
 
 def start_copying():
     with open('files.txt', 'r') as files:
