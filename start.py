@@ -3,12 +3,14 @@ import os, shutil
 path_dir = {'input': '', 'output': ''}
 errors = []
 
+
 def define_path():
     with open('path.txt', 'r') as path_config:
         line = path_config.read()
         configs = line.split(',')
         path_dir['input'] = configs[0].strip()
         path_dir['output'] = configs[1].strip()
+
 
 def logs_error():
     if len(errors) > 0:
@@ -27,6 +29,12 @@ def start_copying():
             except:
                 errors.append(file_name)
 
-define_path()
-start_copying()
-logs_error()
+
+def main():
+    define_path()
+    start_copying()
+    logs_error()
+
+
+if __name__ == "__main__":
+    main()
